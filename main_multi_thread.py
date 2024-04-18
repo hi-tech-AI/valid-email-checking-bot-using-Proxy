@@ -131,17 +131,12 @@ def process_email(line_number, line, proxies_container, start_time):
                 driver.quit()
         except NoSuchElementException:
             print(f'Could not load this link with proxy : {random_proxy}')
-            # if driver: driver.quit()
-            # continue
         except WebDriverException as e:
             print(f"WebDriverException encountered with proxy: {random_proxy}, error: {e}")
-            # if driver: driver.quit()
-            # continue
         finally:
             if driver:
                 driver.quit()
                 driver = None
-            # thread_limit.release()
         
         with proxy_update_lock:
             if proxies_container[0]:
