@@ -26,6 +26,9 @@ python main_single_thread.py
 ```
 4. The script will attempt to log in to each Netflix account using random proxies and passwords.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ## Notes
 - Make sure to handle the output files `valid_email.txt` and `invalid_email.txt` as per your requirements.
 - Use this script responsibly and ensure compliance with Netflix's terms of service.
